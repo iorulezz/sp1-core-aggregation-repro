@@ -66,7 +66,7 @@ fn main() -> Result<()> {
     tracing::info!("attempting outer aggregation proof in core mode");
     let _outer_proof = client
         .prove(&aggregator_pk, aggregator_stdin)
-        .core()
+        .core() // if this is compressed, proving will work
         .run()?;
 
     Ok(())
