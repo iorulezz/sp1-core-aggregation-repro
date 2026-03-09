@@ -1,3 +1,2 @@
-target/
-program/*/target/
+**/target/
 .DS_Store

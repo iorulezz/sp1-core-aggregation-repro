@@ -20,8 +20,7 @@ The structure intentionally mirrors the SP1 example layout:
 ## Run
 
 ```bash
-RUST_LOG=info cargo run --release \
-  --manifest-path script/Cargo.toml
+RUST_LOG=info cargo run --release --manifest-path script/Cargo.toml
 ```
 
 ## Expected failure signature
