@@ -59,7 +59,7 @@ fn main() -> Result<()> {
 
     let mut aggregator_stdin = SP1Stdin::new();
     aggregator_stdin.write(&DUMMY_PAYLOAD);
-    aggregator_stdin.write(&Some(fibonacci_vk_hash));
+    aggregator_stdin.write(&fibonacci_vk_hash);
     aggregator_stdin.write(&fibonacci_pv_hash);
     aggregator_stdin.write_proof(*fibonacci_reduce_proof, fibonacci_vk);
 
